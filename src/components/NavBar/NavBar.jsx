@@ -9,7 +9,7 @@ const NavBar = () => {
             <img src={logo} width={100} alt=""/>
         </div>
 
-        <ul>
+        <ul className='list-menu'>
             <li>Dibujos a color</li>
             <li>Dibujos a blanco y negro</li>
             <li>Dibujos a escala de grises</li>
