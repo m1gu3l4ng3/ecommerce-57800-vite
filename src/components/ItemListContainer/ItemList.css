@@ -1,0 +1,7 @@
+.item-list {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    gap: 30px;
+    padding: 30px;
+    text-align: -webkit-center;
+}
