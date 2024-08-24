@@ -1,0 +1,34 @@
+.itemcount {
+    width: 160px;
+}
+.itemcount .controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.controls button {
+    background-color: green;
+    border: none;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    border: 2px solid rgb(93, 93, 93);
+}
+.controls button:hover {
+    cursor: pointer;
+}
+.itemcount .add {
+    background-color: green;
+    border: none;
+    color: white;
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid rgb(93, 93, 93);
+    font-size: 20px;
+    padding: 10px 0;
+    margin: 10px 0;
+}
+.itemcount .add:hover {
+    cursor: pointer;
+}
