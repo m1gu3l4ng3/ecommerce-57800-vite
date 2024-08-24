@@ -1,28 +1,33 @@
-import { useState } from 'react'
+import { useState } from "react";
+
+import "./itemCount.css";
 
 const ItemCount = ({ stock, agregarAlCarrito }) => {
-  const [count, setCount] = useState(1)
+  const [count, setCount] = useState(1);
 
   const aumentar = () => {
     if (count < stock) {
-      setCount( count + 1)
+      setCount(count + 1);
     }
-  }
-   const disminuir = () => {
+  };
+  const disminuir = () => {
     if (count > 1) {
-      setCount( count - 1)
+      setCount(count - 1);
     }
-   }
+  };
   return (
-    <div style={{display:"flex", flexWrap: "wrap"}} className='item-count-container'>
-      <div className='counter'>
-        <button className='counter-button' onClick={disminuir}>-</button>
+    <div className="itemcount">
+      <div className="controls">
+        <button onClick={disminuir}>-</button>
         <p>{count}</p>
-        <button className='counter-button' onClick={aumentar}>+</button>
-        <button className='counter-button' onClick={() => agregarAlCarrito(count) }>Agregar al carrito</button>
+        <button onClick={aumentar}>+</button>
       </div>
-    </div>
-  )
-}
 
-export default ItemCount
+      <button className="add" onClick={() => agregarAlCarrito(count)}>
+        Agregar al carrito
+      </button>
+    </div>
+  );
+};
+
+export default ItemCount;
